@@ -1,9 +1,29 @@
-.body {
-  color: white;
+body {
+  background-color: #ffffff;
+  color: black;
+}
+
+.body-inverse{
+  background-color: #151515;
+  color: #ffffff;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+::scrollbar{
+  display: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #53346D;
+}
+
+::selection {
+  color: white; 
+  background: #53346D;
 }
 
 @media only screen and (max-width: 991px) {
@@ -30,7 +50,7 @@
   max-height: 100%;
 }
 
-.big-headline{
+.big-headline {
   font-size: 5vmax;
   margin-top: 4rem;
   margin-bottom: -0.25rem;
@@ -44,6 +64,25 @@
   /* For Firefox*/
   background: linear-gradient(to top, #53346D, #000000);
   /* Standard syntax */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.big-headline-inverse {
+  background: #ffffff;
+  background: -webkit-linear-gradient(to top, #bababa, #ffffff);
+  /* For Safari */
+  background: -o-linear-gradient(to top, #bababa, #ffffff);
+  /* For Opera */
+  background: -moz-linear-gradient(to top, #bababa, #ffffff);
+  /* For Firefox*/
+  background: linear-gradient(to top, #bababa, #ffffff);
+  font-size: 5vmax;
+  margin-top: 4rem;
+  margin-bottom: -0.25rem;
+  font-weight: bold;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -89,6 +128,23 @@
   background: -moz-linear-gradient(to top, #53346D, #000000);
   /* For Firefox*/
   background: linear-gradient(to top, #53346D, #000000);
+  /* Standard syntax */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  z-index: 999;
+}
+
+.typed-strings-inverse {
+  background: #ffffff;
+  background: -webkit-linear-gradient(to top, #bababa, #ffffff);
+  /* For Safari */
+  background: -o-linear-gradient(to top, #bababa, #ffffff);
+  /* For Opera */
+  background: -moz-linear-gradient(to top, #bababa, #ffffff);
+  /* For Firefox*/
+  background: linear-gradient(to top, #bababa, #ffffff);
   /* Standard syntax */
   -webkit-background-clip: text;
   background-clip: text;
@@ -230,13 +286,13 @@
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
 }
 
-.gradient_cover{
+.gradient_cover {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: #ffffff;
   background: -webkit-linear-gradient(to top, #bababa, #ffffff);
   /* For Safari */
@@ -249,8 +305,30 @@
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  color: #000000;
 }
 
+.gradient_cover-inverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background: #555555;
+  background: -webkit-linear-gradient(to top, #555555, #000000);
+  /* For Safari */
+  background: -o-linear-gradient(to top, #555555, #000000);
+  /* For Opera */
+  background: -moz-linear-gradient(to top, #555555, #000000);
+  /* For Firefox*/
+  background: linear-gradient(to top, #555555, #000000);
+  /* Standard syntax */
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+}
 
 #specs {
   font-size: 2vmax;
@@ -259,32 +337,11 @@
   word-wrap: nowrap;
 }
 
-#contact-button{
+#contact-button {
   margin-bottom: 0.5rem;
 }
 
-.custom-footer {
-  display: flex;
-  position: relative;
-  z-index: 1200;
-  background: #ffffff;
-  background: -webkit-linear-gradient(to bottom, #53346D, #000000);
-  /* For Safari */
-  background: -o-linear-gradient(to bottom, #53346D, #000000);
-  /* For Opera */
-  background: -moz-linear-gradient(to bottom, #53346D, #000000);
-  /* For Firefox*/
-  background: linear-gradient(to bottom, #53346D, #000000);
-  /* Standard syntax */
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
-  color: white;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-#round-contact-button{
+#round-contact-button {
   display: flex;
   font-size: 2.5vmax;
   font-weight: bold;
@@ -311,7 +368,7 @@
   -o-transition: all ease 1s;
 }
 
-#round-contact-button:hover{
+#round-contact-button:hover {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
@@ -319,6 +376,27 @@
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   -o-transition: all ease 1s;
+}
+
+.custom-footer {
+  display: flex;
+  position: relative;
+  z-index: 1200;
+  background: #ffffff;
+  background: -webkit-linear-gradient(to bottom, #53346D, #000000);
+  /* For Safari */
+  background: -o-linear-gradient(to bottom, #53346D, #000000);
+  /* For Opera */
+  background: -moz-linear-gradient(to bottom, #53346D, #000000);
+  /* For Firefox*/
+  background: linear-gradient(to bottom, #53346D, #000000);
+  /* Standard syntax */
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.25);
+  color: white;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 img.emoji {
@@ -333,7 +411,7 @@ img.emoji {
 }
 
 .blog-section {
-  min-height: 95.05vh;
+  min-height: 95.10vh;
   display: flex;
   justify-content: center;
   z-index: 1000;
@@ -348,6 +426,22 @@ img.emoji {
   /* Standard syntax */
 }
 
+.blog-section-inverse {
+  min-height: 95.05vh;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  background: #000000;
+  background: -webkit-linear-gradient(to top, #555555, #000000);
+  /* For Safari */
+  background: -o-linear-gradient(to top, #555555, #000000);
+  /* For Opera */
+  background: -moz-linear-gradient(to top, #555555, #000000);
+  /* For Firefox*/
+  background: linear-gradient(to top, #555555, #000000);
+  /* Standard syntax */
+}
+
 .blog-holder {
   width: 100%;
   margin-top: 6rem;
@@ -358,6 +452,8 @@ img.emoji {
 }
 
 .card {
+  background-color: #ffffff;
+  color: #000000;
   display: flex;
   position: relative;
   border-radius: 1.5rem;
@@ -371,6 +467,22 @@ img.emoji {
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
+.card-inverse {
+  background-color: #333333;
+  color: #ffffff;
+  display: flex;
+  position: relative;
+  border-radius: 1.5rem;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  margin: 1.5vmax;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+}
+
 .card:hover {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -379,6 +491,16 @@ img.emoji {
   -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-inverse:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 25px 0px rgba(255, 255, 255, 0.5);
 }
 
 .card-img {
@@ -395,6 +517,20 @@ img.emoji {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
+.card-img-inverse {
+  display: flex;
+  position: relative;
+  border-radius: 1.5rem;
+  border: 0.25rem solid black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+}
+
 .card-img:hover {
   transform: scale(1.005);
   -webkit-transition: all 1s ease;
@@ -404,6 +540,33 @@ img.emoji {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-inverse:hover {
+  transform: scale(1.005);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -moz-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+}
+
+.card-title a{
+  color: #000000;
+}
+
+.card-title-inverse a{
+  color: #ffffff;
+}
+
+hr{
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.hr-inverse{
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 .card-title:hover {
@@ -437,11 +600,36 @@ img.emoji {
   }
 }
 
-
 .post-title {
-  font-size: 5vmax;
+  font-size: 4vmax;
   margin-top: 6rem;
-  margin-bottom: -0.5rem;
+  text-decoration: underline;
+  margin-bottom: 0.25vmax;
+  line-height: 1.5;
+}
+
+.post-title a{
+  color: #000000;
+}
+
+.post-title-inverse a{
+  color: #ffffff;
+}
+
+.post-date{
+  color: rgba(0,0,0,0.75);
+}
+
+.post-date a{
+  color: rgba(0,0,0,0.75);
+}
+
+.post-date-inverse{
+  color: rgba(255,255,255,0.75);
+}
+
+.post-date-inverse a{
+  color: rgba(255,255,255,0.75);
 }
 
 .post-image {
@@ -477,7 +665,7 @@ img.emoji {
   text-align: justify;
 }
 
-.post-content img{
+.post-content img {
   max-width: 75vw;
   border: 0.05vmax solid white;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
@@ -489,7 +677,7 @@ img.emoji {
   -o-transition: all ease 0.5s;
 }
 
-.post-content img:hover{
+.post-content img:hover {
   transform: scale(1.005);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -505,10 +693,18 @@ img.emoji {
   max-width: 90vw;
 }
 
-.share div{
+.share div {
   line-height: 0;
   margin: 0.5vmax;
   -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.post-content a {
+  color: #53346D;
+}
+
+.post-content-inverse a{
+  color: #bababa;
 }

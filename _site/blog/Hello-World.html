@@ -13,10 +13,10 @@
 
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
 <meta name="og:title" content="Harsh Trivedi | Hello World">
-<meta name="og:description" content="Harsh Trived, a Tech Lover, a Graphic Freak, Inspired by Imagination.">
+<meta name="og:description" content="Harsh Trivedi, a Tech Lover, a Graphic Freak, Inspired by Imagination.">
 <meta name="og:image" content="https://i.imgur.com/8aFFy4S.jpg">
 <meta name="og:image:alt" content="Harsh Trivedi | Hello World">
-<meta name="og:url" content="/blog/Hello-World">
+<meta name="og:url" content="http://localhost:4000/blog/Hello-World">
 <meta name="article:author" content="https://www.facebook.com/harsh98trivedi">
 <meta name="og:site_name" content="Harsh Trivedi | Hello World">
 <meta name="fb:admins" content="100002148065902">
@@ -35,22 +35,17 @@
 <!-- Schema.org for Google -->
 <meta itemprop="name" content="Harsh Trivedi | Hello World">
 <meta name="author" content="Harsh Trivedi"/>
-<meta itemprop="description" content="Harsh Trived, a Tech Lover, a Graphic Freak, Inspired by Imagination.">
+<meta itemprop="description" content="Harsh Trivedi, a Tech Lover, a Graphic Freak, Inspired by Imagination.">
 <meta itemprop="image" content="https://i.imgur.com/8aFFy4S.jpg">
 <!-- Include Meta Tags Here -->
   <!--INCLUDE STYLESHEETS STARTS HERE-->
-<link rel="stylesheet" href="/css/bootstrap4.0.min.css" />
-<link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/extra.css" />
-<link rel='icon' type='image' href='/images/favicon.png' />
+<link rel="stylesheet" href="http://localhost:4000/css/bootstrap4.0.min.css" />
+<link rel="stylesheet" href="http://localhost:4000/css/style.css" />
+<link rel="stylesheet" href="http://localhost:4000/css/extra.css" />
+<link rel='icon' type='image' href='http://localhost:4000/images/favicon.png' />
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
 <!--INCLUDE STYLESHEETS ENDS HERE-->
-
-<!-- Twitter Twemoji -->
-<script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.5"></script>
-<!-- Twitter Twemoji -->
-
 </head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -73,13 +68,13 @@
   <!-- Navbar Starts -->
 <nav style="font-family: 'Abel', sans-serif;" class="navbar navbar-expand-lg fixed-top" id="nav-main">
   <!-- LOGO -->
-  <a href="/" class="navbar-brand">
-    <img class="logo" src="/images/logo.svg" height="50rem" alt="HTSmile Logo" />
+  <a href="http://localhost:4000/" class="navbar-brand">
+    <img class="logo" src="http://localhost:4000/images/logo.svg" height="50rem" alt="HTSmile Logo" />
   </a>
   <!-- LOGO -->
 
   <!-- BURGER TOGGLE -->
-  <img src="/images/menu.svg" style="width:5vmax; position: relative;" alt="Menu;" class="navbar-toggler"
+  <img src="http://localhost:4000/images/menu.svg" style="width:5vmax; position: relative;" alt="Menu;" class="navbar-toggler"
     data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
     aria-label="Toggle Navigation" />
   <!-- BURGER TOGGLE -->
@@ -89,21 +84,21 @@
 
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" id="link" href="/#welcome">Home</a>
+        <a class="nav-link" id="link" href="http://localhost:4000/#welcome">Home</a>
       </li>
 
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="link" href="/#about-section">About</a>
+        <a class="nav-link" id="link" href="http://localhost:4000/#about-section">About</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" id="link" href="/#contact-section">Contact</a>
+        <a class="nav-link" id="link" href="http://localhost:4000/#contact-section">Contact</a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link active" id="link"
-          href="/blog">Blog<a>
+          href="http://localhost:4000/blog">Blog<a>
       </li>
 
       <li class="nav-item dropdown">
@@ -113,39 +108,83 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="projects">
           <a class="dropdown-item" target="_blank" href="https://www.techetarian.com">Techetarian</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" target="_blank" href="/YouTube-Thumbnail-Downloader">YouTube
+          <a class="dropdown-item" target="_blank" href="http://localhost:4000/YouTube-Thumbnail-Downloader">YouTube
             Thumbnail Downloader</a>
         </div>
       </li>
     </ul>
+
+    <center>
+      <input type="checkbox" id="invert" /><label for="invert"></label>
+      <style>
+        input[type=checkbox] {
+          visibility: hidden;
+        }
+        input:checked+label:after {
+          left: calc(100% - 2.5px);
+          transform: translateX(-100%);
+          border-radius: 5rem;
+          position: absolute;
+          filter: invert(25%);
+        }
+        label {
+          content: '';
+          cursor: pointer;
+          width: 3rem;
+          background: #000000;
+          top: 0.25rem;
+          height: 1.5rem;
+          margin: 0 0.5rem 0 0.5rem;
+          border-radius: 5rem;
+          position: relative;
+          -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+          -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+        }
+        label:after {
+          content: '';
+          position: absolute;
+          left: 2.5px;
+          top: 2.5px;
+          width: 1.25rem;
+          height: 1.25rem;
+          background: white;
+          border-radius: 5rem;
+          transition: 0.25s;
+          -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+          -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
+        }
+      </style>
+    </center>
 
     <div class="row" id="socialmedia">
       <!-- Social Media Icons -->
       <div class="container" id="socialmedia">
         <div class="grid">
           <a href="https://www.facebook.com/harsh98trivedi" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/facebook.svg" alt="Facebook"></img>
+            <img id="social" src="http://localhost:4000/images/facebook.svg" alt="Facebook"></img>
           </a>
           <a href="https://www.twitter.com/harsh98trivedi" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/twitter.svg" alt="Twitter"></img>
+            <img id="social" src="http://localhost:4000/images/twitter.svg" alt="Twitter"></img>
           </a>
           <a href="https://www.youtube.com/harsh98trivedi?sub_confirmation=1" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/youtube.svg" alt="YouTube"></img>
+            <img id="social" src="http://localhost:4000/images/youtube.svg" alt="YouTube"></img>
           </a>
           <a href="https://plus.google.com/+harsh98trivedi" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/googleplus.svg" alt="Google+"></img>
+            <img id="social" src="http://localhost:4000/images/googleplus.svg" alt="Google+"></img>
           </a>
           <a href="https://www.instagram.com/harsh98trivedi" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/instagram.svg" alt="Instagram"></img>
+            <img id="social" src="http://localhost:4000/images/instagram.svg" alt="Instagram"></img>
           </a>
           <a href="https://www.reddit.com/u/harshtrivedi" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/reddit.svg" alt="Reddit"></img>
+            <img id="social" src="http://localhost:4000/images/reddit.svg" alt="Reddit"></img>
           </a>
           <a href="https://www.github.com/harsh98trivedi" target="_blank" id="social-media-icons">
-            <img id="social" src="/images/github.svg" alt="Github"></img>
+            <img id="social" src="http://localhost:4000/images/github.svg" alt="Github"></img>
           </a>
           <a href="mailto:harsh98trivedi@gmail.com" id="social-media-icons">
-            <img id="social" src="/images/gmail.svg" alt="Email"></img>
+            <img id="social" src="http://localhost:4000/images/gmail.svg" alt="Email"></img>
           </a>
         </div>
       </div>
@@ -162,72 +201,117 @@
     <div style="padding:0;min-height:95.05vh;display:flex; font-family: Poppins, sans-serif;" class="container-fluid">
       <div id="top" class="col-lg-12 col-md-12 col-sm-12">
         <p class="post-title">
-          <a style="width: auto;color:black;" href="/blog/Hello-World">
-            <u>Hello World</u>
-          </a>
+          <a href="/blog/Hello-World">Hello World</a>
         </p>
         
-        <span style="font-size:1.5vmax; color:#8a8a8a; display:inline;font-weight: 300" class="post-date"><i>September 02, 2018 Sunday</i> by
-          <a style="color: #53346D; opacity: 0.75;" href="https://twitter.com/harsh98trivedi" target="_blank"><u>Harsh Trivedi</u></a>
+        <span style="font-size:1.5vmax; display:inline;font-weight:300;" class="post-date"><span style="font-weight:600">September 02, 2018 Sunday</span> by
+          <a style="font-weight:600" href="https://twitter.com/harsh98trivedi" target="_blank">Harsh Trivedi</a>
         </span>
         
         <hr>
         <div><img class="post-image" src="https://i.imgur.com/8aFFy4S.jpg" alt="Hello World" /></div>
         <div class="post-content">
-          <p>Hello everyone, I am <a href="#collage"><strong>Harsh Trivedi</strong></a>, a <strong>19</strong>-year-old guy, who loves each and every aspect of <em>Technology</em>. My life started in a lovely city, <strong>Kanpur</strong> <em>(formerly Cawnpore)</em>,  the 11th most populous urban city located in the central part of <strong>Uttar Pradesh, India</strong>. I love Graphic Designing, Web Development, Video Editing, Travelling, Learning new things and Making new friends with similar interest and mindset.</p>
+          <p>Hello everyone, I am <a href="https://www.facebook.com/harsh98trivedi" target="_blank"><strong>Harsh Trivedi</strong></a>, a <strong>19</strong>-year-old guy, who loves each and every aspect of <em>Technology</em>. My life started in a lovely city, <strong>Kanpur</strong> <em>(formerly Cawnpore)</em>,  the 11th most populous urban city located in the central part of <strong>Uttar Pradesh, India</strong>. I love Graphic Designing, Web Development, Video Editing, Travelling, Learning new things and Making new friends with similar interest and mindset.</p>
 
-<p><em>Computer</em>, is my most favorite subject since childhood, has completely changed the way I think and understand things, the best part about a computer is the learning experience, whether you are designing some stuff, editing a video or programming an app, if you are doing all that with a goal in mind and with full dedication, you’ll surely learn how things work and how you need to work with them or tweak them in your own possible way.</p>
+<p><em>Computer</em>, is my most favorite subject since childhood, and has completely changed the way I think and understand things, the best part about a computer is the learning experience, whether you are designing some stuff, editing a video or programming an app, if you are doing all that with a goal in mind and with full dedication, you’ll surely learn how things work and how you need to work with them or tweak them in your own possible way.</p>
 
 <p>I am starting this <a href="https://jekyllrb.com" target="_blank"><strong>Jekyll</strong></a> based blog to share my thoughts, experiences, knowledge, and much more, I will share most of my social activities now and then, also I will be sharing some apps, websites, and tools that I have made or I am using for making my tech activities easy.</p>
 
-<p>I currently live in Kanpur, where people are mostly boring, but exceptions are always there so I found <a href="https://kanpurfoss.org"><strong>KanpurFOSS Community</strong></a>, where we do <a href="https://www.meetup.com/WordPress-Kanpur" target="_blank">meetups</a>, workshops, and a <a href="https://kanpur.wordcamp.org" target="_blank">WordCamp</a> every year, I would like to thank KanpurFOSS Community for sharing an awesome tech experience here, in Kanpur.
+<p>I currently live in Kanpur, where people are mostly boring, but exceptions are always there so I found <a href="https://kanpurfoss.org" target="_blank"><strong>KanpurFOSS Community</strong></a>, where we do <a href="https://www.meetup.com/WordPress-Kanpur" target="_blank">meetups</a>, workshops, and a <a href="https://kanpur.wordcamp.org" target="_blank">WordCamp</a> every year, I would like to thank KanpurFOSS Community for sharing an awesome tech experience here, in Kanpur.
 <br /></p>
 
-<p>If you want to know more <a href="/#about-section" target="_blank">about</a> me, you can simply <a href="/#contact-section" target="_blank">contact</a> me using different social media platforms mentioned in the navbar.<br /></p>
+<p>If you want to know more <a href="http://localhost:4000/#about-section" target="_blank">about</a> me, you can simply <a href="http://localhost:4000/#contact-section" target="_blank">contact</a> me using different social media platforms mentioned in the navbar.<br /></p>
 
-<p>I will also be sharing some of the Tweets, Facebook Posts, Instagram photos and YouTube videos using a simple embed or using some sort of API.
-<br id="collage" /></p>
+<p>I will also be sharing some of the Tweets, Facebook Posts, Instagram photos and YouTube videos using a simple embed or using some sort of API.</p>
+
 <center>
-<h6>Here is a collage of my photos. 👇🏽</h6>
-<img width="500vmax" src="https://i.imgur.com/AeweLl3.png" />
+<h6>This is me! 👇🏽</h6>
+<img width="300vmax" style="border-radius:100%;" src="https://i.imgur.com/p7l0l5D.jpg" />
 </center>
 
         </div>
-        <a style="padding:5vmax;font-weight:600;color:#8a8a8a" href="#top">Back to Top</a>
+        <style>
+          #backtotop{
+            font-size: 1.5vmax;
+            text-decoration: none;
+            border-radius:5vmax;
+            background-color:#333333;
+            padding:0.25vmax 1.25vmax 0.25vmax 1.25vmax;
+            font-weight:500;
+            letter-spacing: 0.15vmax;
+            color:#ffffff;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+          }
+          #backtotop:hover{
+            -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+          }
+        </style>
+        <a id="backtotop" href="#top">BACK TO TOP</a>
         <hr>
         <span class="row share">
-  <div class="fb-like" data-href="/blog/Hello-World" data-layout="button_count" data-action="like"
+  <div class="fb-like" data-href="http://localhost:4000/blog/Hello-World" data-layout="button_count" data-action="like"
     data-show-faces="false" data-share="false"></div>
-  <div><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hello World Harsh Trived, a Tech Lover, a Graphic Freak, Inspired by Imagination."
+  <div><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hello World Harsh Trivedi, a Tech Lover, a Graphic Freak, Inspired by Imagination."
       data-via="harsh98trivedi" data-dnt="true" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
-  <div class="fb-share-button" data-href="/blog/Hello-World" data-layout="button_count"
+  <div class="fb-share-button" data-href="http://localhost:4000/blog/Hello-World" data-layout="button_count"
     data-mobile-iframe="true"></div>
 </span>
-<div class="fb-comments" data-href="/blog/Hello-World" data-width="auto" data-numposts="5"></div>
+<div class="fb-comments" data-href="http://localhost:4000/blog/Hello-World" data-width="auto" data-numposts="5"></div>
 <br>
       </div>
     </div>
   </center>
   <!-- Blog-Content Container Ends -->
 
-  <center>
-<!--Footer-->
-<footer style="style="font-family: 'Abel', sans-serif;"" class="footer custom-footer">
-    <div class="text-center col-lg-12 col-md-12 col-sm-12">
-        Proudly Hosted on <a style="color:white;" href="https://pages.github.com/">GitHub Pages.</a>
-    </div>
-</footer>
-<!--/.Footer-->
-</center>
 
   <!-- Include Scripts Here -->
-  <script src="//js/jquery3.3.1.min.js" type="text/javascript"></script>
-  <script src="//js/bootstrap4.0.0.min.js"></script>
-  <script src="//js/popper1.0.js"></script>
-  <script src="//js/main.js"></script>
+  <script src="http://localhost:4000//js/jquery3.3.1.min.js" type="text/javascript"></script>
+  <script src="http://localhost:4000//js/bootstrap4.0.0.min.js"></script>
+  <script src="http://localhost:4000//js/popper1.0.js"></script>
+  <script src="http://localhost:4000//js/main.js"></script>
   <!-- Include Scripts Here -->
+
+  <center>
+    <!--Footer-->
+    <footer style="font-family: 'Abel', sans-serif;" class="footer custom-footer">
+        <div class="text-center col-lg-12 col-md-12 col-sm-12">
+            Proudly Hosted on <a style="color:white;" href="https://pages.github.com/">GitHub Pages.</a>
+        </div>
+    </footer>
+    <!--/.Footer-->
+    <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
+    <script>
+        $('#invert').click(function () {
+            $('body').toggleClass('body-inverse');
+            $('.big-headline').toggleClass('big-headline-inverse');
+            $('.gradient_cover').toggleClass('gradient_cover-inverse');
+            $('.typed-strings').toggleClass('typed-strings-inverse');
+            $('.blog-section').toggleClass('blog-section-inverse');
+            $('.card').toggleClass('card-inverse');
+            $('.card-title').toggleClass('card-title-inverse');
+            $('hr').toggleClass('hr-inverse');
+            $('.post-title').toggleClass('post-title-inverse');
+            $('.post-date').toggleClass('post-date-inverse');
+            $('.post-content').toggleClass('post-content-inverse');
+            $('.typed-cursor').toggleClass('typed-cursor-inverse');
+            $('.card-img').toggleClass('card-img-inverse');
+        })
+    </script>
+</center>
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

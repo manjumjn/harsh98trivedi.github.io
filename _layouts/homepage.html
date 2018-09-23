@@ -23,19 +23,20 @@
 <!-- Body Starts -->
 
 <body data-spy="scroll" data-target="#nav-main" data-offset="150" style="font-family: 'Abel', sans-serif;">
-{% include navbar.html %}
-    {% include welcome_section.html %}
-    {% include about_section.html %}
-    {% include contact_section.html %}
-  {% include footer.html %}
+  {% include navbar.html %}
+  {% include welcome_section.html %}
+  {% include about_section.html %}
+  {% include contact_section.html %}
 
   <!-- Include Scripts Here -->
-  <script src="{{site.url}}/{{site.baseurl}}/js/typed.min.js" type="text/javascript"></script>
-  <script src="{{site.url}}/{{site.baseurl}}/js/jquery3.3.1.min.js" type="text/javascript"></script>
-  <script src="{{site.url}}/{{site.baseurl}}/js/bootstrap4.0.0.min.js"></script>
-  <script src="{{site.url}}/{{site.baseurl}}/js/popper1.0.js"></script>
-  <script src="{{site.url}}/{{site.baseurl}}/js/main.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/js/typed.min.js" type="text/javascript"></script>
+  <script src="{{site.url}}{{site.baseurl}}/js/jquery3.3.1.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/js/bootstrap4.0.0.min.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/js/popper1.0.js"></script>
+  <script src="{{site.url}}{{site.baseurl}}/js/main.js"></script>
   <!-- Include Scripts Here -->
+
+  {% include footer.html %}
 
   <!-- Extra Script -->
 

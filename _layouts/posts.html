@@ -29,14 +29,13 @@
     <div style="padding:0;min-height:95.05vh;display:flex; font-family: Poppins, sans-serif;" class="container-fluid">
       <div id="top" class="col-lg-12 col-md-12 col-sm-12">
         <p class="post-title">
-          <a style="width: auto;color:black;" href="{{site.ur}}{{site.baseurl}}{{page.url}}">
-            <u>{{page.title}}</u>
-          </a>
+          <a href="{{site.ur}}{{site.baseurl}}{{page.url}}">{{page.title}}</a>
         </p>
         {% for author in site.data.authors %}
-        <span style="font-size:1.5vmax; color:#8a8a8a; display:inline;font-weight: 300" class="post-date">{{page.date |
-          date: '<i>%B %d, %Y %A</i>'}} by
-          <a style="color: #53346D; opacity: 0.75;" href="{{ author.twitter }}" target="_blank"><u>{{page.author}}</u></a>
+        <span style="font-size:1.5vmax; display:inline;font-weight:300;" class="post-date">{{page.date
+          |
+          date: '<span style="font-weight:600">%B %d, %Y %A</span>' }} by
+          <a style="font-weight:600" href="{{ author.twitter }}" target="_blank">{{page.author}}</a>
         </span>
         {% endfor %}
         <hr>
@@ -44,7 +43,35 @@
         <div class="post-content">
           {{page.content}}
         </div>
-        <a style="padding:5vmax;font-weight:600;color:#8a8a8a" href="#top">Back to Top</a>
+        <style>
+          #backtotop{
+            font-size: 1.5vmax;
+            text-decoration: none;
+            border-radius:5vmax;
+            background-color:#333333;
+            padding:0.25vmax 1.25vmax 0.25vmax 1.25vmax;
+            font-weight:500;
+            letter-spacing: 0.15vmax;
+            color:#ffffff;
+            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+          }
+          #backtotop:hover{
+            -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            -moz-transition: all ease 0.5s;
+            -o-transition: all ease 0.5s;
+          }
+        </style>
+        <a id="backtotop" href="#top">BACK TO TOP</a>
         <hr>
         {% include social-sharing.html %}
       </div>
@@ -52,7 +79,6 @@
   </center>
   <!-- Blog-Content Container Ends -->
 
-  {% include footer.html %}
 
   <!-- Include Scripts Here -->
   <script src="{{site.url}}/{{site.baseurl}}/js/jquery3.3.1.min.js" type="text/javascript"></script>
@@ -60,6 +86,8 @@
   <script src="{{site.url}}/{{site.baseurl}}/js/popper1.0.js"></script>
   <script src="{{site.url}}/{{site.baseurl}}/js/main.js"></script>
   <!-- Include Scripts Here -->
+
+  {% include footer.html %}
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

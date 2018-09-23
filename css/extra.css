@@ -20,6 +20,28 @@
     -webkit-text-fill-color: transparent;
 }
 
+.typed-cursor-inverse {
+    font-family: 'Abel', sans-serif;
+    opacity: 100%;
+    color: #ffffff;
+    -webkit-animation: blink 0.75s infinite;
+    -moz-animation: blink 0.75s infinite;
+    -ms-animation: blink 0.75s infinite;
+    -o-animation: blink 0.75s infinite;
+    animation: blink 0.75s infinite;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to top, #bababa, #ffffff);
+    /* For Safari */
+    background: -o-linear-gradient(to top, #bababa, #ffffff);
+    /* For Opera */
+    background: -moz-linear-gradient(to top, #bababa, #ffffff);
+    /* For Firefox*/
+    background: linear-gradient(to top, #bababa, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+
 /* CURSOR BLINKING KEYFRAMES */
 @keyframes blink {
     0% {
@@ -107,78 +129,78 @@
     -moz-animation: bounce 1.5s infinite;
     -webkit-animation: bounce 1.5s infinite;
     animation: bounce 1.5s infinite;
-  }
-  
-  @-moz-keyframes bounce {
-  
+}
+
+@-moz-keyframes bounce {
+
     0%,
     20%,
     50%,
     80%,
     100% {
-      -moz-transform: translateY(0);
-      transform: translateY(0);
+        -moz-transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     0% {
-      -moz-transform: translateY(-0.5rem);
-      transform: translateY(-0.5rem);
+        -moz-transform: translateY(-0.5rem);
+        transform: translateY(-0.5rem);
     }
-  
+
     100% {
-      -moz-transform: translateY(-0.3rem);
-      transform: translateY(-0.3rem);
+        -moz-transform: translateY(-0.3rem);
+        transform: translateY(-0.3rem);
     }
-  }
-  
-  @-webkit-keyframes bounce {
-  
+}
+
+@-webkit-keyframes bounce {
+
     0%,
     20%,
     50%,
     80%,
     100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     40% {
-      -webkit-transform: translateY(-0.5rem);
-      transform: translateY(-0.5rem);
+        -webkit-transform: translateY(-0.5rem);
+        transform: translateY(-0.5rem);
     }
-  
+
     60% {
-      -webkit-transform: translateY(-0.3rem);
-      transform: translateY(-0.3rem);
+        -webkit-transform: translateY(-0.3rem);
+        transform: translateY(-0.3rem);
     }
-  }
-  
-  @keyframes bounce {
-  
+}
+
+@keyframes bounce {
+
     0%,
     20%,
     50%,
     80%,
     100% {
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  
+
     40% {
-      -moz-transform: translateY(-0.5rem);
-      -ms-transform: translateY(-0.5rem);
-      -webkit-transform: translateY(-0.5rem);
-      transform: translateY(-0.5rem);
+        -moz-transform: translateY(-0.5rem);
+        -ms-transform: translateY(-0.5rem);
+        -webkit-transform: translateY(-0.5rem);
+        transform: translateY(-0.5rem);
     }
-  
+
     60% {
-      -moz-transform: translateY(-0.3rem);
-      -ms-transform: translateY(-0.3rem);
-      -webkit-transform: translateY(-0.3rem);
-      transform: translateY(-0.3rem);
+        -moz-transform: translateY(-0.3rem);
+        -ms-transform: translateY(-0.3rem);
+        -webkit-transform: translateY(-0.3rem);
+        transform: translateY(-0.3rem);
     }
-  }
-  
-  /*BOUNCE ANIMATION FOR THE ARROW*/
+}
+
+/*BOUNCE ANIMATION FOR THE ARROW*/
