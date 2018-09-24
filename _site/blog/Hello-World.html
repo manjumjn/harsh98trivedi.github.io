@@ -114,48 +114,9 @@
       </li>
     </ul>
 
-    <center>
-      <input type="checkbox" id="invert" /><label for="invert"></label>
-      <style>
-        input[type=checkbox] {
-          visibility: hidden;
-        }
-        input:checked+label:after {
-          left: calc(100% - 2.5px);
-          transform: translateX(-100%);
-          border-radius: 5rem;
-          position: absolute;
-          filter: invert(25%);
-        }
-        label {
-          content: '';
-          cursor: pointer;
-          width: 3rem;
-          background: #000000;
-          top: 0.25rem;
-          height: 1.5rem;
-          margin: 0 0.5rem 0 0.5rem;
-          border-radius: 5rem;
-          position: relative;
-          -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-          -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-        }
-        label:after {
-          content: '';
-          position: absolute;
-          left: 2.5px;
-          top: 2.5px;
-          width: 1.25rem;
-          height: 1.25rem;
-          background: white;
-          border-radius: 5rem;
-          transition: 0.25s;
-          -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-          -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-          box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.75);
-        }
-      </style>
+    <center style="margin: 0.5rem;">
+    <input type="checkbox" id="invert" class="cbx hidden"/>
+    <label for="invert" class="lbl"></label>
     </center>
 
     <div class="row" id="socialmedia">
@@ -196,6 +157,7 @@
   </div>
   <!-- Navbar Ends-->
 </nav>
+
   <center>
     <!-- Blog-Content Container Starts -->
     <div style="padding:0;min-height:95.05vh;display:flex; font-family: Poppins, sans-serif;" class="container-fluid">
@@ -225,40 +187,11 @@
 <p>I will also be sharing some of the Tweets, Facebook Posts, Instagram photos and YouTube videos using a simple embed or using some sort of API.</p>
 
 <center>
-<h6>This is me! 👇🏽</h6>
-<img width="300vmax" style="border-radius:100%;" src="https://i.imgur.com/p7l0l5D.jpg" />
+<p style="border-radius:0.5rem;max-width:15vmax;text-align:center;background-color:rgba(0,0,0,0.75);color:#ffffff;padding:0.25vmax;font-size:1.5rem;">THIS IS ME 👇🏽</p>
+<img width="300vmax" style="border-radius:2.5rem;" src="https://i.imgur.com/p7l0l5D.jpg" />
 </center>
 
         </div>
-        <style>
-          #backtotop{
-            font-size: 1.5vmax;
-            text-decoration: none;
-            border-radius:5vmax;
-            background-color:#333333;
-            padding:0.25vmax 1.25vmax 0.25vmax 1.25vmax;
-            font-weight:500;
-            letter-spacing: 0.15vmax;
-            color:#ffffff;
-            -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-            -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-            -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            -moz-transition: all ease 0.5s;
-            -o-transition: all ease 0.5s;
-          }
-          #backtotop:hover{
-            -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
-            -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
-            -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            -moz-transition: all ease 0.5s;
-            -o-transition: all ease 0.5s;
-          }
-        </style>
-        <a id="backtotop" href="#top">BACK TO TOP</a>
         <hr>
         <span class="row share">
   <div class="fb-like" data-href="http://localhost:4000/blog/Hello-World" data-layout="button_count" data-action="like"
@@ -270,8 +203,38 @@
   <div class="fb-share-button" data-href="http://localhost:4000/blog/Hello-World" data-layout="button_count"
     data-mobile-iframe="true"></div>
 </span>
-<div class="fb-comments" data-href="http://localhost:4000/blog/Hello-World" data-width="auto" data-numposts="5"></div>
 <br>
+<div class="disqus-coments" id="disqus_thread"></div>
+<style>
+  #backtotop{
+    font-size: 1.5vmax;
+    text-decoration: none;
+    border-radius:5vmax;
+    background-color:#333333;
+    padding:0.25vmax 1.25vmax 0.25vmax 1.25vmax;
+    font-weight:500;
+    letter-spacing: 0.15vmax;
+    color:#ffffff;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+  }
+  #backtotop:hover{
+    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+  }
+</style>
+<div style="margin: 1.5rem 0 1.5rem 0;"><a id="backtotop" href="#top">BACK TO TOP</a></div>
+
       </div>
     </div>
   </center>
@@ -293,25 +256,45 @@
         </div>
     </footer>
     <!--/.Footer-->
-    <script src="http://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
-    <script>
-        $('#invert').click(function () {
-            $('body').toggleClass('body-inverse');
-            $('.big-headline').toggleClass('big-headline-inverse');
-            $('.gradient_cover').toggleClass('gradient_cover-inverse');
-            $('.typed-strings').toggleClass('typed-strings-inverse');
-            $('.blog-section').toggleClass('blog-section-inverse');
-            $('.card').toggleClass('card-inverse');
-            $('.card-title').toggleClass('card-title-inverse');
-            $('hr').toggleClass('hr-inverse');
-            $('.post-title').toggleClass('post-title-inverse');
-            $('.post-date').toggleClass('post-date-inverse');
-            $('.post-content').toggleClass('post-content-inverse');
-            $('.typed-cursor').toggleClass('typed-cursor-inverse');
-            $('.card-img').toggleClass('card-img-inverse');
-        })
-    </script>
 </center>
+
+<script src="http://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
+<script>
+  $('#invert').click(function () {
+  $('body').toggleClass('body-inverse');
+  $('.big-headline').toggleClass('big-headline-inverse');
+  $('.gradient_cover').toggleClass('gradient_cover-inverse');
+  $('.typed-strings').toggleClass('typed-strings-inverse');
+  $('.blog-section').toggleClass('blog-section-inverse');
+  $('.card').toggleClass('card-inverse');
+  $('.card-title').toggleClass('card-title-inverse');
+  $('hr').toggleClass('hr-inverse');
+  $('.post-title').toggleClass('post-title-inverse');
+  $('.post-date').toggleClass('post-date-inverse');
+  $('.post-content').toggleClass('post-content-inverse');
+  $('.typed-cursor').toggleClass('typed-cursor-inverse');
+  $('.card-img').toggleClass('card-img-inverse');
+  })
+</script>
+
+<script>
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = 'https://harshtrivedi.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

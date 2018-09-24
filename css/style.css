@@ -1,11 +1,19 @@
 body {
   background-color: #ffffff;
   color: black;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -o-transition: all ease 0.5s;
 }
 
 .body-inverse{
   background-color: #151515;
   color: #ffffff;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -o-transition: all ease 0.5s;
 }
 
 ::-webkit-scrollbar {
@@ -22,7 +30,7 @@ body {
 }
 
 ::selection {
-  color: white; 
+  color: white;
   background: #53346D;
 }
 
@@ -48,6 +56,10 @@ body {
   display: flex;
   align-items: center;
   max-height: 100%;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -o-transition: all ease 0.5s;
 }
 
 .big-headline {
@@ -68,6 +80,10 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-transition: all ease 0.5s;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -o-transition: all ease 0.5s;
 }
 
 .big-headline-inverse {
@@ -287,6 +303,10 @@ body {
 }
 
 .gradient_cover {
+  -moz-transition: all ease 1s;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -o-transition: all ease 1s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,6 +329,10 @@ body {
 }
 
 .gradient_cover-inverse {
+  -moz-transition: all ease 1s;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -o-transition: all ease 1s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -461,7 +485,7 @@ img.emoji {
   transition: all 1s ease;
   -moz-transition: all ease 1s;
   -o-transition: all ease 1s;
-  margin: 1.5vmax;
+  margin: 0.5rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
@@ -477,7 +501,7 @@ img.emoji {
   transition: all 1s ease;
   -moz-transition: all ease 1s;
   -o-transition: all ease 1s;
-  margin: 1.5vmax;
+  margin: 0.5rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
@@ -507,7 +531,7 @@ img.emoji {
   display: flex;
   position: relative;
   border-radius: 1.5rem;
-  border: 0.25rem solid white;
+  border: 0.15rem solid transparent;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   -moz-transition: all ease 1s;
@@ -521,7 +545,7 @@ img.emoji {
   display: flex;
   position: relative;
   border-radius: 1.5rem;
-  border: 0.25rem solid black;
+  border: 0.15rem solid transparent;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   -moz-transition: all ease 1s;
@@ -551,6 +575,11 @@ img.emoji {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.25);
+}
+
+.card-title{
+  font-size: 1.5vmax;
+  font-weight: 600;
 }
 
 .card-title a{
@@ -667,7 +696,7 @@ hr{
 
 .post-content img {
   max-width: 75vw;
-  border: 0.05vmax solid white;
+  border: 0.15rem solid white;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
@@ -707,4 +736,14 @@ hr{
 
 .post-content-inverse a{
   color: #bababa;
+}
+
+.disqus-coments{
+  background: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }

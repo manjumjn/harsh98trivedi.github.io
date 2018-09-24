@@ -6,7 +6,7 @@ author: Harsh Trivedi
 layout: posts
 ---
 
-<center><p style="font-size:1vmax;padding: 0.25vmax;max-width:70vmax;background-color:#f2415e;text-transform: uppercase; color:#ffffff;">Before starting off with the main story, let me tell you one important thing, if you are a boring guest, then please don't read this.</p></center>
+<center><p style="font-size:1rem;padding: 0.25vmax;max-width:82.5vmax;background-color:#f2415e;text-transform: uppercase; color:#ffffff;">Before starting off with the main story, let me tell you one important thing, if you are a boring guest, then please don't read this.</p></center>
 
 Boring guests, they teach us many things, like how things work, how unfair life is, how to be patient, and how to deal with some boring people when they actually don't know how boring they are.
 
@@ -21,4 +21,4 @@ I finally got the solution to my error but those slow guests were stuck in their
 
 Finally, after wasting my 1 hour in some boring chit-chat with those boring fellows, I got the chance to fix my problem and after that, the day ended on a lighter note.
 
-<center><p style="max-width:20vmax;text-align:center;background-color:#999fff;color:#ffffff;padding:0.25vmax;font-size:1vmax;"><a style="color:#ffffff;"  href='https://www.freepik.com/free-vector/bored-student_787766.htm'>Vector Used in Post Image</a> by <b>Freepik</b></p></center>
+<center><p style="max-width:25vmax;text-align:center;background-color:#999fff;color:#ffffff;padding:0.25vmax;font-size:1rem;"><a style="color:#ffffff;"  href='https://www.freepik.com/free-vector/bored-student_787766.htm'>Vector Used in Post Image</a> by <b>Freepik</b></p></center>
