@@ -46,21 +46,6 @@
 <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=devanagari,latin-ext" rel="stylesheet">
 
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "3b647126-52f5-4d4f-8980-4110741caec0",
-      autoRegister: true,
-      notifyButton: {
-        enable: false,
-      },
-    });
-  });
-</script>
-
-<!--INCLUDE STYLESHEETS ENDS HERE-->
 </head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -89,7 +74,7 @@
   <!-- LOGO -->
 
   <!-- BURGER TOGGLE -->
-  <img src="http://localhost:4000/images/menu.svg" style="width:5vmax; position: relative;" alt="Menu;" class="navbar-toggler"
+  <img src="http://localhost:4000/images/menu.svg" style="width:2.5rem; position: relative;" alt="Menu;" class="navbar-toggler"
     data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
     aria-label="Toggle Navigation" />
   <!-- BURGER TOGGLE -->
@@ -181,7 +166,7 @@
           <a href="/blog/Hello-World">Hello World</a>
         </p>
         
-        <span style="font-size:1.5vmax; display:inline;font-weight:300;" class="post-date"><span style="font-weight:600">September 02, 2018 Sunday</span> by
+        <span style="font-size:1.75vmax; display:inline;font-weight:300;" class="post-date"><span style="font-weight:600">September 02, 2018 Sunday</span> by
           <a style="font-weight:600" href="https://twitter.com/harsh98trivedi" target="_blank">Harsh Trivedi</a>
         </span>
         
@@ -202,8 +187,7 @@
 <p>I will also be sharing some of the Tweets, Facebook Posts, Instagram photos and YouTube videos using a simple embed or using some sort of API.</p>
 
 <center>
-<p style="border-radius:0.5rem;max-width:15vmax;text-align:center;background-color:rgba(0,0,0,0.75);color:#ffffff;padding:0.25vmax;font-size:1.5rem;">THIS IS ME 👇🏽</p>
-<img width="300vmax" style="border-radius:2.5rem;" src="https://i.imgur.com/p7l0l5D.jpg" />
+<img id="hello-world-harsh-img" width="250vmax" style="border-radius:2.5rem;filter:grayscale(100%);" src="https://i.imgur.com/p7l0l5D.jpg" />
 </center>
 
         </div>
@@ -222,33 +206,32 @@
 <div class="disqus-coments" id="disqus_thread"></div>
 <style>
   #backtotop{
-    font-size: 1.5vmax;
+    font-size: 1.75vmax;
     text-decoration: none;
-    border-radius:5vmax;
+    border-radius:5rem;
     background-color:#333333;
-    padding:0.25vmax 1.25vmax 0.25vmax 1.25vmax;
+    padding:0.5vmax 1.5vmax;
     font-weight:500;
-    letter-spacing: 0.15vmax;
     color:#ffffff;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -moz-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
   }
   #backtotop:hover{
-    -webkit-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     -moz-transition: all ease 0.5s;
     -o-transition: all ease 0.5s;
   }
 </style>
-<div style="margin: 1.5rem 0 1.5rem 0;"><a id="backtotop" href="#top">BACK TO TOP</a></div>
+<div style="margin: 1.5rem 0;"><a id="backtotop" href="#top">BACK TO TOP</a></div>
 
       </div>
     </div>
@@ -267,13 +250,13 @@
     <!--Footer-->
     <footer style="font-family: 'Abel', sans-serif;" class="footer custom-footer">
         <div class="text-center col-lg-12 col-md-12 col-sm-12">
-            Proudly Hosted on <a style="color:white;" href="https://pages.github.com/">GitHub Pages.</a>
+            Proudly Hosted on <a target="_blank" style="color:white;" href="https://pages.github.com/">GitHub Pages.</a>
         </div>
     </footer>
     <!--/.Footer-->
 </center>
 
-<script src="http://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
+<script src="https://twemoji.maxcdn.com/2/twemoji.min.js"></script>
 <script>
   $('#invert').click(function () {
   $('body').toggleClass('body-inverse');
@@ -289,7 +272,7 @@
   $('.post-content').toggleClass('post-content-inverse');
   $('.typed-cursor').toggleClass('typed-cursor-inverse');
   $('.card-img').toggleClass('card-img-inverse');
-  })
+});
 </script>
 
 <script>

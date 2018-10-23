@@ -20,6 +20,5 @@ If you want to know more [about]({{site.url}}{{site.baseurl}}/#about-section){:t
 I will also be sharing some of the Tweets, Facebook Posts, Instagram photos and YouTube videos using a simple embed or using some sort of API.
 
 <center>
-<p style="border-radius:0.5rem;max-width:15vmax;text-align:center;background-color:rgba(0,0,0,0.75);color:#ffffff;padding:0.25vmax;font-size:1.5rem;">THIS IS ME 👇🏽</p>
-<img width="300vmax" style="border-radius:2.5rem;" src="https://i.imgur.com/p7l0l5D.jpg">
+<img id="hello-world-harsh-img" width="250vmax" style="border-radius:2.5rem;filter:grayscale(100%);" src="https://i.imgur.com/p7l0l5D.jpg">
 </center>

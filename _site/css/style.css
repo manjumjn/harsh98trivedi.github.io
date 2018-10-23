@@ -123,7 +123,7 @@ body {
 }
 
 .logo {
-  max-width: 5vmax;
+  max-width: 2.5rem;
   position: relative;
 }
 
@@ -646,19 +646,19 @@ hr{
 }
 
 .post-date{
-  color: rgba(0,0,0,0.75);
+  color: rgba(0,0,0,0.5);
 }
 
 .post-date a{
-  color: rgba(0,0,0,0.75);
+  color: rgba(0,0,0,0.5);
 }
 
 .post-date-inverse{
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.5);
 }
 
 .post-date-inverse a{
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.5);
 }
 
 .post-image {
@@ -741,7 +741,7 @@ hr{
 .disqus-coments{
   background: #ffffff;
   padding: 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.25rem;
   margin-bottom: 0.5rem;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);

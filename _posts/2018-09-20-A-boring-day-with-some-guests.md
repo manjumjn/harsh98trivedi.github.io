@@ -21,4 +21,4 @@ I finally got the solution to my error but those slow guests were stuck in their
 
 Finally, after wasting my 1 hour in some boring chit-chat with those boring fellows, I got the chance to fix my problem and after that, the day ended on a lighter note.
 
-<center><p style="max-width:25vmax;text-align:center;background-color:#999fff;color:#ffffff;padding:0.25vmax;font-size:1rem;"><a style="color:#ffffff;"  href='https://www.freepik.com/free-vector/bored-student_787766.htm'>Vector Used in Post Image</a> by <b>Freepik</b></p></center>
+<center><p style="max-width:25rem;text-align:center;background-color:#999fff;color:#ffffff;padding:0.25vmax;font-size:1rem;"><a style="color:#ffffff;"  href='https://www.freepik.com/free-vector/bored-student_787766.htm'>Vector Used in Post Image</a> by <b>Freepik</b></p></center>
